@@ -1,0 +1,21 @@
+
+<p>todo-comp works!</p>
+<h2>TODO here</h2>
+
+<div class="container">
+    <table class="table table-bordered" border="2" align="center">
+        <tr>
+            <th>userId</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </tr>
+
+        <tr *ngFor="let i of t">
+            <td>{{i.userId}}</td>
+            <td>{{i.id}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.completed}}</td>
+        </tr>
+    </table>
+</div> 

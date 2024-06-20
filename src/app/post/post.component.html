@@ -1,0 +1,18 @@
+<p>post works!</p>
+<h2>Post here</h2>
+<table class="table table-bordered" border="2" align="center">
+    <tr>
+        <td>UserId</td>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Body</td>
+    </tr>
+
+    <tr *ngFor="let i of info">
+        <td>{{i.userId}}</td>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.body}}</td>
+    </tr>
+
+</table>

@@ -1,0 +1,20 @@
+<p>news-comp works!</p>
+<h2>News here</h2>
+
+<div class="container">
+    <table class="table table-bordered" border="2" align="center">
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image</th>
+        </tr>
+
+        <tr *ngFor="let i of article">
+            <td>{{i.author}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.description}}</td>
+            <td><img [src]="i.urlToImage" height="50px" width="50px"></td>
+        </tr>
+    </table>
+</div> 

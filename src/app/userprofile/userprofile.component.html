@@ -1,0 +1,48 @@
+<h2>This is Data binding</h2>
+
+<p style="text-decoration: underline;color: brown;">1) Interpolation =></p>
+
+<p>{{msg}} ............{{interpolation}}</p>
+
+<p style="text-decoration: underline;color: brown;">2) Property binding =></p>
+
+<p [innerHTML]="text"></p>
+
+<p style="text-decoration: underline; color: brown;">3) Event binding =></p>
+
+<h2>This is Directives</h2>
+
+<h5 style="text-align: center; color: brown;">ngFor Example with table </h5>
+<table class="container table-bordered">
+   
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salry</th>
+    </tr>
+
+    <tr *ngFor="let i of emp">
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.salary}}</td>
+    </tr>
+</table>
+
+<hr>
+
+<h5 style="text-align: center; color: brown;">ngFor Example with Unordered List </h5>
+
+<ul *ngFor="let i of emp">
+    <li> Name :- {{i.name}}</li>
+    <li> Age :- {{i.age}}</li>
+    <li> Salary :- {{i.salary}}</li>
+</ul>
+
+<hr>
+
+<h5 style="text-align: center; color: brown;">ngIf Example</h5>
+
+<p *ngIf="!show">
+    {{value}}
+</p>
+
